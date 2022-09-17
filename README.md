@@ -16,16 +16,17 @@ Assuming have 3 vertexes<br>
 
 The logic of Floyd Warshall Algorithm is to update each point by comparing distances from different pathes.<br>
 
-`for (k = 0; k < V; k++) { //Pick one vertex as intermediate `<br>
-`   for (i = 0; i < V; i++) { //Pick one as the start `<br>
-`       for (j = 0; j < V; j++) { // Pick one as the end `<br>
-`           if (dist[i][k] + dist[k][j] < dist[i][j]) `<br>
-`               dist[i][j] = dist[i][k] + dist[k][j]; `<br>
-`               //Check whether adding this intermediate make the path shorter `<br>
-`        } `<br>
-`   } `<br>
-`}`<br>
-
+```
+for (k = 0; k < V; k++) { //Pick one vertex as intermediate 
+    for (i = 0; i < V; i++) { //Pick one as the start 
+        for (j = 0; j < V; j++) { // Pick one as the end 
+            if (dist[i][k] + dist[k][j] < dist[i][j]) 
+                dist[i][j] = dist[i][k] + dist[k][j]; 
+                //Check whether adding this intermediate make the path shorter 
+        } 
+    }    
+}
+```
 >Yvonne Wu Sep.16 2022 Software Engineer
 
 

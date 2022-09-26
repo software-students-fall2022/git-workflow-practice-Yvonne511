@@ -37,3 +37,5 @@ for (k = 0; k < V; k++) {
 ## Comment
 
 I would avoid using `HTML` code in Markdown where possible. For example, you use the `<mark>` and `<br>` HTML tags in this document. I have removed them. Stick to pure Markdown where possible. Consider using stars, e.g. `**s**` to bring emphasis to some text, and type the regular `Enter` key in your editor to create new lines.
+
+Sagynbek: One of the greatest algorithms!
